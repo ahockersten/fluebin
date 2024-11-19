@@ -23,3 +23,4 @@ RELEASE="$(rpm -E %fedora)"
 #systemctl enable podman.socket
 
 /tmp/keepassxc.sh
+/tmp/fonts.sh

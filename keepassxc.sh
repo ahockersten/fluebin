@@ -4,7 +4,7 @@
 
 set -eoux pipefail
 
-flatpak install -y org.keepassxc.KeePassXC
+flatpak --system install -y org.keepassxc.KeePassXC
 
 mkdir -p /usr/share/user-tmpfiles.d
 

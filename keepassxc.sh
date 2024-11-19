@@ -4,8 +4,6 @@
 
 set -eoux pipefail
 
-flatpak --system install -y org.keepassxc.KeePassXC/x86_64/stable
-
 mkdir -p /usr/share/user-tmpfiles.d
 
 tee /usr/share/user-tmpfiles.d/keepassxc-integration.conf <<EOF

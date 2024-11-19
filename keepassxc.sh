@@ -42,6 +42,7 @@ flatpak override \
     --filesystem=xdg-data/flatpak/runtime/org.kde.Platform:ro \
     --filesystem=xdg-run/app/org.keepassxc.KeePassXC:create \
     org.mozilla.firefox
+EOF
 
 chmod +x /usr/libexec/flatpak-overrides.sh
 systemctl enable flatpak-overrides.service
@@ -71,6 +72,7 @@ exec flatpak-spawn \
     --usr-path="$RUNTIME_PATH/files" \
     -- keepassxc-proxy "$@"
 EOF
+
 chmod +x /usr/libexec/keepassxc-integration/keepassxc-proxy-wrapper
 
 tee /usr/libexec/keepassxc-integration/firefox-keepassxc.json <<EOF

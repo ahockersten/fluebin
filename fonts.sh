@@ -1,4 +1,5 @@
 mkdir firacode
+cd firacode
 curl -OL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.zip
 unzip FiraCode.zip
 rm FiraCode.zip

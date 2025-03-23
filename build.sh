@@ -6,3 +6,4 @@ RELEASE="$(rpm -E %fedora)"
 
 /tmp/keepassxc.sh
 /tmp/fonts.sh
+/tmp/gcloud.sh

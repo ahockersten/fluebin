@@ -11,8 +11,6 @@ dnf -y install chezmoi
 
 /ctx/fonts.sh
 /ctx/gcloud.sh
-/ctx/flatpaks.sh
 /ctx/brews.sh
-/ctx/zed.sh
 /ctx/sysctl.sh
 /ctx/systemd.sh

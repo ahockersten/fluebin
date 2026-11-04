@@ -2,6 +2,9 @@
 
 set -ouex pipefail
 
+# Copy the contents of system_files/ of the git repo to /
+cp -avf "/ctx/system_files"/. /
+
 RELEASE="$(rpm -E %fedora)"
 
 # chezmoi installed via dnf so it's available BEFORE the first
@@ -9,6 +12,4 @@ RELEASE="$(rpm -E %fedora)"
 dnf -y install chezmoi
 
 /ctx/fonts.sh
-/ctx/gcloud.sh
-/ctx/sysctl.sh
 /ctx/systemd.sh

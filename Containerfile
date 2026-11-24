@@ -4,7 +4,7 @@ COPY build_files /
 COPY system_files /system_files
 
 # Base Image
-FROM ghcr.io/ublue-os/bluefin-dx-nvidia-open:stable
+FROM ghcr.io/ublue-os/bluefin-dx-nvidia-open:stable@sha256:d52afcefda649f9fc2942215e52d4c86cf510242425104cdd934848c705fd702
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:testing
 # FROM ghcr.io/ublue-os/aurora:stable
